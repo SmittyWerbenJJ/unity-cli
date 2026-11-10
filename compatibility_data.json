@@ -1,0 +1,4427 @@
+[
+  {
+    "command": "animation.animator add_layer",
+    "class": "Unity.Pipeline.Editor.Commands.Animation.AnimatorControllerCommands",
+    "signature": "object AddLayer(ObjectRef controller, string name, float weight = 1f, string blendingMode = \"Override\", bool dryRun = false)",
+    "file": "Editor\\Commands\\Animation\\AnimatorControllerCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "animation.animator add_parameter",
+    "class": "Unity.Pipeline.Editor.Commands.Animation.AnimatorControllerCommands",
+    "signature": "object AddParameter(ObjectRef controller, string name, string type = null, JToken defaultValue = null, bool dryRun = false)",
+    "file": "Editor\\Commands\\Animation\\AnimatorControllerCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "animation.animator add_state",
+    "class": "Unity.Pipeline.Editor.Commands.Animation.AnimatorControllerCommands",
+    "signature": "object AddState(ObjectRef controller, JToken layer = null, string name = null, ObjectRef motion = null, bool isDefault = false, node position in the graph (cosmetic).\")] JArray position = null, bool dryRun = false)",
+    "file": "Editor\\Commands\\Animation\\AnimatorControllerCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "animation.animator add_transition",
+    "class": "Unity.Pipeline.Editor.Commands.Animation.AnimatorControllerCommands",
+    "signature": "object AddTransition(ObjectRef controller, JToken layer = null, string fromState = null, string toState = null,)",
+    "file": "\\\"IfNot\\\"",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "animation.animator create_controller",
+    "class": "Unity.Pipeline.Editor.Commands.Animation.AnimatorControllerCommands",
+    "signature": "AuthoringResult CreateController(string path, bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\Animation\\AnimatorControllerCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "animation.animator get_controller",
+    "class": "Unity.Pipeline.Editor.Commands.Animation.AnimatorControllerCommands",
+    "signature": "AnimatorControllerInfo GetController(ObjectRef controller)",
+    "file": "Editor\\Commands\\Animation\\AnimatorControllerCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "animation.clip create",
+    "class": "Unity.Pipeline.Editor.Commands.Animation.AnimationClipCommands",
+    "signature": "AuthoringResult Create(string path, float frameRate = 60f, bool loop = false, bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\Animation\\AnimationClipCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "animation.clip get",
+    "class": "Unity.Pipeline.Editor.Commands.Animation.AnimationClipCommands",
+    "signature": "AnimationClipInfo Get(ObjectRef clip, bool includeKeys = false)",
+    "file": "Editor\\Commands\\Animation\\AnimationClipCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "animation.clip remove_curve",
+    "class": "Unity.Pipeline.Editor.Commands.Animation.AnimationClipCommands",
+    "signature": "SetAnimationCurveResult RemoveCurve(ObjectRef clip, string path = \"\", string type = null, string property = null, bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\Animation\\AnimationClipCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "animation.clip set_curve",
+    "class": "Unity.Pipeline.Editor.Commands.Animation.AnimationClipCommands",
+    "signature": "SetAnimationCurveResult SetCurve(ObjectRef clip, string path = \"\", string type = null, string property = null,)",
+    "file": "\\\"In\\\"",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "animation.timeline add_clip",
+    "class": "Unity.Pipeline.Editor.Commands.Animation.TimelineCommands",
+    "signature": "object AddClip(ObjectRef timeline, string track = null, float start = 0f, float duration = 0f, ObjectRef asset = null, bool dryRun = false)",
+    "file": "Editor\\Commands\\Animation\\TimelineCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.AddClip(timeline, track, start, duration, asset, dryRun)"
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 1
+    }
+  },
+  {
+    "command": "animation.timeline add_track",
+    "class": "Unity.Pipeline.Editor.Commands.Animation.TimelineCommands",
+    "signature": "object AddTrack(ObjectRef timeline, string trackType = null, string name = null, string parentTrack = null, bool dryRun = false)",
+    "file": "Editor\\Commands\\Animation\\TimelineCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.AddTrack(timeline, trackType, name, parentTrack, dryRun)"
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 1
+    }
+  },
+  {
+    "command": "animation.timeline create",
+    "class": "Unity.Pipeline.Editor.Commands.Animation.TimelineCommands",
+    "signature": "object Create(string path, float frameRate = 60f, bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\Animation\\TimelineCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.Create(path, frameRate, confirm, dryRun)"
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 1
+    }
+  },
+  {
+    "command": "animation.timeline get",
+    "class": "Unity.Pipeline.Editor.Commands.Animation.TimelineCommands",
+    "signature": "object Get(ObjectRef timeline)",
+    "file": "Editor\\Commands\\Animation\\TimelineCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.Get(timeline)"
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 1
+    }
+  },
+  {
+    "command": "asset copy",
+    "class": "Unity.Pipeline.Editor.Commands.Assets.AssetCommands",
+    "signature": "AuthoringResult Copy(ObjectRef asset, string destination, bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\Assets\\AssetCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "asset create",
+    "class": "Unity.Pipeline.Editor.Commands.Assets.AssetCommands",
+    "signature": "AuthoringResult Create(string path, string type, string shader = null, bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\Assets\\AssetCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "asset create_folder",
+    "class": "Unity.Pipeline.Editor.Commands.Assets.FolderCommands",
+    "signature": "AuthoringResult CreateFolder(string path)",
+    "file": "Editor\\Commands\\Assets\\FolderCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "asset delete",
+    "class": "Unity.Pipeline.Editor.Commands.Assets.AssetCommands",
+    "signature": "AuthoringResult Delete(ObjectRef asset, bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\Assets\\AssetCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "asset find",
+    "class": "Unity.Pipeline.Editor.Commands.Assets.AssetCommands",
+    "signature": "FindAssetsResult Find(string type = null, string name = null, string label = null, string searchIn = null, int limit = 200)",
+    "file": "Editor\\Commands\\Assets\\AssetCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "asset get_import_settings",
+    "class": "Unity.Pipeline.Editor.Commands.Assets.AssetImportCommands",
+    "signature": "GetImportSettingsResult GetImportSettings(ObjectRef asset, string platform = \"Default\")",
+    "file": "Editor\\Commands\\Assets\\AssetImportCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "asset import",
+    "class": "Unity.Pipeline.Editor.Commands.Assets.AssetCommands",
+    "signature": "AuthoringResult Import(string source, string path, bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\Assets\\AssetCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "asset move",
+    "class": "Unity.Pipeline.Editor.Commands.Assets.AssetCommands",
+    "signature": "AuthoringResult Move(ObjectRef asset, string destination, bool dryRun = false)",
+    "file": "Editor\\Commands\\Assets\\AssetCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "asset read_text",
+    "class": "Unity.Pipeline.Editor.Commands.Assets.TextFileCommands",
+    "signature": "ReadTextFileResult ReadText(string path, int maxBytes = 1024 * 1024)",
+    "file": "Editor\\Commands\\Assets\\TextFileCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "asset rename",
+    "class": "Unity.Pipeline.Editor.Commands.Assets.AssetCommands",
+    "signature": "AuthoringResult Rename(ObjectRef asset, string newName, bool dryRun = false)",
+    "file": "Editor\\Commands\\Assets\\AssetCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "asset set_import_settings",
+    "class": "Unity.Pipeline.Editor.Commands.Assets.AssetImportCommands",
+    "signature": "SetImportSettingsResult SetImportSettings(ObjectRef asset,)",
+    "file": "Editor\\Commands\\Assets\\AssetImportCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "asset write_text",
+    "class": "Unity.Pipeline.Editor.Commands.Assets.TextFileCommands",
+    "signature": "AuthoringResult WriteText(string path, string contents, bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\Assets\\TextFileCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "authoring get_root",
+    "class": "Unity.Pipeline.Editor.Commands.Authoring.AuthoringConfigCommands",
+    "signature": "object GetRoot()",
+    "file": "Editor\\Commands\\Authoring\\AuthoringConfigCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "authoring set_root",
+    "class": "Unity.Pipeline.Editor.Commands.Authoring.AuthoringConfigCommands",
+    "signature": "object SetRoot(string root)",
+    "file": "Editor\\Commands\\Authoring\\AuthoringConfigCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "build create_profile",
+    "class": "Unity.Pipeline.Editor.Commands.Build.BuildProfileCommands",
+    "signature": "object CreateProfile(string name = \"\", string platform = \"\", string subtarget = \"\", string folder = \"\", bool activate = false, bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\Build\\BuildProfileCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.CreateProfile(name, platform, subtarget, folder, activate, confirm, dryRun)"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.CreateProfile(name, platform, subtarget, folder, activate, confirm, dryRun)"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.CreateProfile(name, platform, subtarget, folder, activate, confirm, dryRun)"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "build get_settings",
+    "class": "Unity.Pipeline.Editor.Commands.Build.BuildConfigCommands",
+    "signature": "object GetSettings()",
+    "file": "Editor\\Commands\\Build\\BuildConfigCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "build list",
+    "class": "Unity.Pipeline.Editor.Commands.Build.BuildConfigCommands",
+    "signature": "object List()",
+    "file": "Editor\\Commands\\Build\\BuildConfigCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "build list_platforms",
+    "class": "Unity.Pipeline.Editor.Commands.Build.BuildProfileCommands",
+    "signature": "object ListPlatforms(bool showAll = false)",
+    "file": "Editor\\Commands\\Build\\BuildProfileCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.ListPlatforms(showAll)"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.ListPlatforms(showAll)"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.ListPlatforms(showAll)"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "build list_profiles",
+    "class": "Unity.Pipeline.Editor.Commands.Build.BuildConfigCommands",
+    "signature": "object ListProfiles()",
+    "file": "Editor\\Commands\\Build\\BuildConfigCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.ListProfiles()"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.ListProfiles()"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.ListProfiles()"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "build run",
+    "class": "Unity.Pipeline.Editor.Commands.Build.BuildCommand",
+    "signature": "object Run(string target = \"\", string outputPath = \"\", string profileName = \"\", string[] options = null, string[] scenes = null, bool confirm = false, bool dryRun = false, double timeoutInSeconds = 60)",
+    "file": "Editor\\Commands\\Build\\BuildCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "build set_profile",
+    "class": "Unity.Pipeline.Editor.Commands.Build.BuildProfileCommands",
+    "signature": "object SetProfile(string name = \"\", string folder = \"\", bool? overrideGlobalScenes = null, string[] scenes = null, string[] scriptingDefines = null, bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\Build\\BuildProfileCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.SetProfile(name, folder, overrideGlobalScenes, scenes, scriptingDefines, confirm, dryRun)"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.SetProfile(name, folder, overrideGlobalScenes, scenes, scriptingDefines, confirm, dryRun)"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.SetProfile(name, folder, overrideGlobalScenes, scenes, scriptingDefines, confirm, dryRun)"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "build set_settings",
+    "class": "Unity.Pipeline.Editor.Commands.Build.BuildConfigCommands",
+    "signature": "object SetSettings(SetBuildSettingsInput settings = null, bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\Build\\BuildConfigCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "build status",
+    "class": "Unity.Pipeline.Editor.Commands.Build.BuildCommand",
+    "signature": "JToken Status()",
+    "file": "Editor\\Commands\\Build\\BuildCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "build.target switch",
+    "class": "Unity.Pipeline.Editor.Commands.Build.SwitchBuildTargetCommand",
+    "signature": "object Switch(string target = \"\", bool confirm = false, double timeoutInSeconds = 60)",
+    "file": "Editor\\Commands\\Build\\SwitchBuildTargetCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "build.target switch_status",
+    "class": "Unity.Pipeline.Editor.Commands.Build.SwitchBuildTargetCommand",
+    "signature": "JToken SwitchStatus()",
+    "file": "Editor\\Commands\\Build\\SwitchBuildTargetCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "capture editor_element",
+    "class": "Unity.Pipeline.Editor.Commands.CaptureEditorElementCommand",
+    "signature": "CaptureElementResponse EditorElement(string window = \"\", string selector = \"\", string output = \"\")",
+    "file": "Editor\\Commands\\CaptureEditorElementCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.EditorElement(window, selector, output)"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.EditorElement(window, selector, output)"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.EditorElement(window, selector, output)"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "capture editor_window",
+    "class": "Unity.Pipeline.Editor.Commands.Capture.CaptureCommands",
+    "signature": "CaptureResult EditorWindow(string window = null, string savePath = null, bool includeInlineImage = false, int maxResolution = 0)",
+    "file": "Editor\\Commands\\Capture\\CaptureCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.EditorWindow(window, savePath, includeInlineImage, maxResolution)"
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 1
+    }
+  },
+  {
+    "command": "capture game_view",
+    "class": "Unity.Pipeline.Editor.Commands.Capture.CaptureCommands",
+    "signature": "CaptureResult GameView(int width = 1280, int height = 720, string camera = null, string savePath = null, bool includeInlineImage = false, int maxResolution = 0, string source = null, string overlay = null)",
+    "file": "Editor\\Commands\\Capture\\CaptureCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.GameView(width, height, camera, savePath, includeInlineImage, maxResolution, source, overlay)"
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 1
+    }
+  },
+  {
+    "command": "capture runtime_element",
+    "class": "Unity.Pipeline.Runtime.Commands.CaptureRuntimeElementCommand",
+    "signature": "CaptureElementResponse RuntimeElement(string panel = \"\", string selector = \"\", string output = \"\")",
+    "file": "Runtime\\Commands\\CaptureRuntimeElementCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.RuntimeElement(panel, selector, output)"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.RuntimeElement(panel, selector, output)"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.RuntimeElement(panel, selector, output)"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "capture scene_view",
+    "class": "Unity.Pipeline.Editor.Commands.Capture.CaptureCommands",
+    "signature": "CaptureResult SceneView(int width = DefaultWidth, int height = DefaultHeight, string savePath = null, bool includeInlineImage = false, int maxResolution = 0, string source = null)",
+    "file": "Editor\\Commands\\Capture\\CaptureCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.SceneView(width, height, savePath, includeInlineImage, maxResolution, source)"
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 1
+    }
+  },
+  {
+    "command": "capture screenshot",
+    "class": "Unity.Pipeline.Editor.Commands.ScreenshotCommand",
+    "signature": "ScreenshotResponse Screenshot(string view = \"game\", string output = \"\", int width = 0, int height = 0)",
+    "file": "Editor\\Commands\\ScreenshotCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "component add",
+    "class": "Unity.Pipeline.Editor.Commands.GameObjects.ComponentCommands",
+    "signature": "AuthoringResult Add(ObjectRef target, string type)",
+    "file": "Editor\\Commands\\GameObjects\\ComponentCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "component get_fields",
+    "class": "Unity.Pipeline.Editor.Commands.Scripts.SerializedFieldCommands",
+    "signature": "object GetFields(ObjectRef target, '). Omit to read all top-level fields.\")] string field = null, string component = null, string detail = null)",
+    "file": "Editor\\Commands\\Scripts\\SerializedFieldCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "component get_properties",
+    "class": "Unity.Pipeline.Editor.Commands.GameObjects.ComponentCommands",
+    "signature": "ComponentPropertiesResult GetProperties(ObjectRef target, string type = null)",
+    "file": "Editor\\Commands\\GameObjects\\ComponentCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "component remove",
+    "class": "Unity.Pipeline.Editor.Commands.GameObjects.ComponentCommands",
+    "signature": "AuthoringResult Remove(ObjectRef target, string type = null)",
+    "file": "Editor\\Commands\\GameObjects\\ComponentCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "component set_properties",
+    "class": "Unity.Pipeline.Editor.Commands.GameObjects.ComponentCommands",
+    "signature": "ComponentPropertiesResult SetProperties(ObjectRef target, JObject properties, string type = null)",
+    "file": "Editor\\Commands\\GameObjects\\ComponentCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "console clear",
+    "class": "Unity.Pipeline.Runtime.Commands.ConsoleCommand",
+    "signature": "object Clear()",
+    "file": "Runtime\\Commands\\ConsoleCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "console get",
+    "class": "Unity.Pipeline.Runtime.Commands.ConsoleCommand",
+    "signature": "ConsoleLogResponse Get(int tail = DefaultTail, string level = ConsoleLogBuffer.LevelLog, long since = -1, string since_session = null)",
+    "file": "Runtime\\Commands\\ConsoleCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "console status",
+    "class": "Unity.Pipeline.Runtime.Commands.ConsoleCommand",
+    "signature": "ConsoleLogResponse Status()",
+    "file": "Runtime\\Commands\\ConsoleCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "console write",
+    "class": "Unity.Pipeline.Runtime.Commands.RuntimeLogCommand",
+    "signature": "string Write(string message, string level = \"info\")",
+    "file": "Runtime\\Commands\\RuntimeLogCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "diagnostics audit_status",
+    "class": "Unity.Pipeline.Editor.Commands.ProjectAudit.ProjectAuditCommands",
+    "signature": "JToken AuditStatus()",
+    "file": "Editor\\Commands\\ProjectAudit\\ProjectAuditCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.AuditStatus()"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.AuditStatus()"
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 2
+    }
+  },
+  {
+    "command": "diagnostics get_performance",
+    "class": "Unity.Pipeline.Editor.Commands.Observability.RenderStats",
+    "signature": "PerformanceStats GetPerformance()",
+    "file": "Editor\\Commands\\Observability\\PerformanceCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "diagnostics memory_snapshot",
+    "class": "Unity.Pipeline.Editor.Commands.Memory.MemorySnapshotCommands",
+    "signature": "object MemorySnapshot(string flags = \"\", string output = \"\", bool collectGarbage = true, double timeoutSeconds = DefaultTimeoutSeconds)",
+    "file": "Editor\\Commands\\Memory\\MemorySnapshotCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.MemorySnapshot(flags, output, collectGarbage, timeoutSeconds)"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.MemorySnapshot(flags, output, collectGarbage, timeoutSeconds)"
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 2
+    }
+  },
+  {
+    "command": "diagnostics memory_snapshot_status",
+    "class": "Unity.Pipeline.Editor.Commands.Memory.MemorySnapshotCommands",
+    "signature": "JToken MemorySnapshotStatus()",
+    "file": "Editor\\Commands\\Memory\\MemorySnapshotCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.MemorySnapshotStatus()"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.MemorySnapshotStatus()"
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 2
+    }
+  },
+  {
+    "command": "diagnostics profiler_connect",
+    "class": "Unity.Pipeline.Editor.Commands.Profiling.ProfilerTargetCommands",
+    "signature": "object ProfilerConnect(string target = \"\")",
+    "file": "Editor\\Commands\\Profiling\\ProfilerTargetCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "diagnostics profiler_record",
+    "class": "Unity.Pipeline.Editor.Commands.Profiling.ProfilerRecordCommands",
+    "signature": "object ProfilerRecord(int frames = DefaultFrames, string output = \"\", bool deepProfile = false, double timeoutSeconds = DefaultTimeoutSeconds)",
+    "file": "Editor\\Commands\\Profiling\\ProfilerRecordCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.ProfilerRecord(frames, output, deepProfile, timeoutSeconds)"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.ProfilerRecord(frames, output, deepProfile, timeoutSeconds)"
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 2
+    }
+  },
+  {
+    "command": "diagnostics profiler_record_status",
+    "class": "Unity.Pipeline.Editor.Commands.Profiling.ProfilerRecordCommands",
+    "signature": "JToken ProfilerRecordStatus()",
+    "file": "Editor\\Commands\\Profiling\\ProfilerRecordCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.ProfilerRecordStatus()"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.ProfilerRecordStatus()"
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 2
+    }
+  },
+  {
+    "command": "diagnostics profiler_record_stop",
+    "class": "Unity.Pipeline.Editor.Commands.Profiling.ProfilerRecordCommands",
+    "signature": "object ProfilerRecordStop()",
+    "file": "Editor\\Commands\\Profiling\\ProfilerRecordCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.ProfilerRecordStop()"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.ProfilerRecordStop()"
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 2
+    }
+  },
+  {
+    "command": "diagnostics profiler_targets",
+    "class": "Unity.Pipeline.Editor.Commands.Profiling.ProfilerTargetCommands",
+    "signature": "object ProfilerTargets()",
+    "file": "Editor\\Commands\\Profiling\\ProfilerTargetCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "diagnostics recent_analytics",
+    "class": "Unity.Pipeline.Editor.Commands.Observability.AnalyticsEventsCommand",
+    "signature": "SentEvent> RecentAnalytics()",
+    "file": "Editor\\Commands\\Observability\\AnalyticsEventsCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "diagnostics record_analytics",
+    "class": "Unity.Pipeline.Editor.Commands.Observability.AnalyticsEventsCommand",
+    "signature": "string RecordAnalytics()",
+    "file": "Editor\\Commands\\Observability\\AnalyticsEventsCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "diagnostics report_evals",
+    "class": "Unity.Pipeline.Runtime.Commands.EvalTelemetryCommand",
+    "signature": "EvalUsageReport ReportEvals(int top = 50)",
+    "file": "Runtime\\Commands\\EvalTelemetryCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "diagnostics run_audit",
+    "class": "Unity.Pipeline.Editor.Commands.ProjectAudit.ProjectAuditCommands",
+    "signature": "object RunAudit(string categories = \"\", string output = \"\")",
+    "file": "Editor\\Commands\\ProjectAudit\\ProjectAuditCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.RunAudit(categories, output)"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.RunAudit(categories, output)"
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 2
+    }
+  },
+  {
+    "command": "editor focus",
+    "class": "Unity.Pipeline.Editor.Commands.FocusEditorCommand",
+    "signature": "string Focus()",
+    "file": "Editor\\Commands\\FocusEditorCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "editor invoke_menu",
+    "class": "Unity.Pipeline.Editor.Commands.MenuItemCommand",
+    "signature": "MenuResponse InvokeMenu(string path = \"\")",
+    "file": "Editor\\Commands\\MenuItemCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "editor quit",
+    "class": "Unity.Pipeline.Editor.Commands.EditorQuitCommand",
+    "signature": "EditorQuitResult Quit(bool save = false, bool discard = false, int exitCode = 0)",
+    "file": "Editor\\Commands\\EditorQuitCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "editor set_auto_tick",
+    "class": "Unity.Pipeline.Editor.Commands.AutoTickCommand",
+    "signature": "string SetAutoTick(bool enabled = true, int intervalMs = DefaultIntervalMs, bool persist = true)",
+    "file": "Editor\\Commands\\AutoTickCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "editor status",
+    "class": "Unity.Pipeline.Editor.Commands.EditorStatusCommand",
+    "signature": "StatusResponse Status()",
+    "file": "Editor\\Commands\\EditorStatusCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "editor.playmode add_player",
+    "class": "Unity.Pipeline.Editor.Commands.PlayModeScenarioCommands",
+    "signature": "object AddPlayer(string path = null, string type = null, string name = null)",
+    "file": "Editor\\Commands\\PlayModeScenarioCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "editor.playmode create_scenario",
+    "class": "Unity.Pipeline.Editor.Commands.PlayModeScenarioCommands",
+    "signature": "object CreateScenario(string name, string path = null)",
+    "file": "Editor\\Commands\\PlayModeScenarioCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.CreateScenario(name, path)"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.CreateScenario(name, path)"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.CreateScenario(name, path)"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "editor.playmode get_scenario_status",
+    "class": "Unity.Pipeline.Editor.Commands.PlayModeScenarioCommands",
+    "signature": "object GetScenarioStatus()",
+    "file": "Editor\\Commands\\PlayModeScenarioCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.GetScenarioStatus()"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.GetScenarioStatus()"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.GetScenarioStatus()"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "editor.playmode list_instances",
+    "class": "Unity.Pipeline.Editor.Commands.InstanceCommands",
+    "signature": "object ListInstances()",
+    "file": "Editor\\Commands\\InstanceCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "editor.playmode list_players",
+    "class": "Unity.Pipeline.Editor.Commands.PlayModeScenarioCommands",
+    "signature": "object ListPlayers(string path = null)",
+    "file": "Editor\\Commands\\PlayModeScenarioCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "editor.playmode list_scenarios",
+    "class": "Unity.Pipeline.Editor.Commands.PlayModeScenarioCommands",
+    "signature": "object ListScenarios()",
+    "file": "Editor\\Commands\\PlayModeScenarioCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.ListScenarios()"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.ListScenarios()"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.ListScenarios()"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "editor.playmode pause",
+    "class": "Unity.Pipeline.Editor.Commands.PlayModeCommands",
+    "signature": "string Pause()",
+    "file": "Editor\\Commands\\PlayModeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "editor.playmode remove_player",
+    "class": "Unity.Pipeline.Editor.Commands.PlayModeScenarioCommands",
+    "signature": "object RemovePlayer(string id, string path = null, bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\PlayModeScenarioCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "editor.playmode set_active_scenario",
+    "class": "Unity.Pipeline.Editor.Commands.PlayModeScenarioCommands",
+    "signature": "object SetActiveScenario(string path)",
+    "file": "Editor\\Commands\\PlayModeScenarioCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.SetActiveScenario(path)"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.SetActiveScenario(path)"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.SetActiveScenario(path)"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "editor.playmode set_run_in_background",
+    "class": "Unity.Pipeline.Editor.Commands.PlayModeCommands",
+    "signature": "string SetRunInBackground(bool enabled = true)",
+    "file": "Editor\\Commands\\PlayModeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "editor.playmode start",
+    "class": "Unity.Pipeline.Editor.Commands.PlayModeCommands",
+    "signature": "string Start()",
+    "file": "Editor\\Commands\\PlayModeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "editor.playmode start_scenario",
+    "class": "Unity.Pipeline.Editor.Commands.PlayModeScenarioCommands",
+    "signature": "object StartScenario()",
+    "file": "Editor\\Commands\\PlayModeScenarioCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.StartScenario()"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.StartScenario()"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.StartScenario()"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "editor.playmode stop",
+    "class": "Unity.Pipeline.Editor.Commands.PlayModeCommands",
+    "signature": "string Stop()",
+    "file": "Editor\\Commands\\PlayModeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "editor.playmode stop_scenario",
+    "class": "Unity.Pipeline.Editor.Commands.PlayModeScenarioCommands",
+    "signature": "object StopScenario()",
+    "file": "Editor\\Commands\\PlayModeScenarioCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.StopScenario()"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.StopScenario()"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.StopScenario()"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "gameobject create",
+    "class": "Unity.Pipeline.Editor.Commands.GameObjects.GameObjectCommands",
+    "signature": "AuthoringResult Create(string name = null, string primitive = null, ObjectRef parent = null)",
+    "file": "Editor\\Commands\\GameObjects\\GameObjectCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "gameobject delete",
+    "class": "Unity.Pipeline.Editor.Commands.GameObjects.GameObjectCommands",
+    "signature": "AuthoringResult Delete(ObjectRef target)",
+    "file": "Editor\\Commands\\GameObjects\\GameObjectCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "gameobject find",
+    "class": "Unity.Pipeline.Editor.Commands.GameObjects.GameObjectCommands",
+    "signature": "FindGameObjectsResult Find(string name = null, string tag = null, string type = null, string hierarchyPath = null, bool includeInactive = true)",
+    "file": "Editor\\Commands\\GameObjects\\GameObjectCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "gameobject get_selection",
+    "class": "Unity.Pipeline.Editor.Commands.Navigation.NavigationCommands",
+    "signature": "SelectionResult GetSelection()",
+    "file": "Editor\\Commands\\Navigation\\NavigationCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "gameobject rename",
+    "class": "Unity.Pipeline.Editor.Commands.GameObjects.GameObjectCommands",
+    "signature": "AuthoringResult Rename(ObjectRef target, string name)",
+    "file": "Editor\\Commands\\GameObjects\\GameObjectCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "gameobject search",
+    "class": "Unity.Pipeline.Editor.Commands.Navigation.NavigationCommands",
+    "signature": "SearchResult Search(string query, int limit = 50)",
+    "file": "Editor\\Commands\\Navigation\\NavigationCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "gameobject set_active",
+    "class": "Unity.Pipeline.Editor.Commands.GameObjects.GameObjectCommands",
+    "signature": "AuthoringResult SetActive(ObjectRef target, bool active)",
+    "file": "Editor\\Commands\\GameObjects\\GameObjectCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "gameobject set_layer",
+    "class": "Unity.Pipeline.Editor.Commands.GameObjects.GameObjectCommands",
+    "signature": "AuthoringResult SetLayer(ObjectRef target, string layer)",
+    "file": "Editor\\Commands\\GameObjects\\GameObjectCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "gameobject set_parent",
+    "class": "Unity.Pipeline.Editor.Commands.GameObjects.GameObjectCommands",
+    "signature": "AuthoringResult SetParent(ObjectRef target, ObjectRef parent = null, bool worldPositionStays = true)",
+    "file": "Editor\\Commands\\GameObjects\\GameObjectCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "gameobject set_selection",
+    "class": "Unity.Pipeline.Editor.Commands.Navigation.NavigationCommands",
+    "signature": "SelectionResult SetSelection(ObjectId[] instanceIds = null, string[] paths = null)",
+    "file": "Editor\\Commands\\Navigation\\NavigationCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "gameobject set_tag",
+    "class": "Unity.Pipeline.Editor.Commands.GameObjects.GameObjectCommands",
+    "signature": "AuthoringResult SetTag(ObjectRef target, string tag)",
+    "file": "Editor\\Commands\\GameObjects\\GameObjectCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "gameobject set_transform",
+    "class": "Unity.Pipeline.Editor.Commands.GameObjects.GameObjectCommands",
+    "signature": "AuthoringResult SetTransform(ObjectRef target, .\")] float[] position = null, in degrees.\")] float[] rotation = null, .\")] float[] scale = null)",
+    "file": "Editor\\Commands\\GameObjects\\GameObjectCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "job batch",
+    "class": "Unity.Pipeline.Editor.Commands.Batch.BatchCommand",
+    "signature": "BatchResult Batch()",
+    "file": "Editor\\Commands\\Batch\\BatchCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "job wait",
+    "class": "Unity.Pipeline.Editor.Commands.WaitForCommands",
+    "signature": "object Wait()",
+    "file": "notEquals",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "job wait_cancel",
+    "class": "Unity.Pipeline.Editor.Commands.WaitForCommands",
+    "signature": "object WaitCancel()",
+    "file": "Editor\\Commands\\WaitForCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "job wait_status",
+    "class": "Unity.Pipeline.Editor.Commands.WaitForCommands",
+    "signature": "object WaitStatus()",
+    "file": "Editor\\Commands\\WaitForCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "lighting bake",
+    "class": "Unity.Pipeline.Editor.Commands.Baking.LightingBakeCommands",
+    "signature": "object Bake(bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\Baking\\LightingBakeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "lighting bake_status",
+    "class": "Unity.Pipeline.Editor.Commands.Baking.LightingBakeCommands",
+    "signature": "JToken BakeStatus()",
+    "file": "Editor\\Commands\\Baking\\LightingBakeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "lighting cancel_bake",
+    "class": "Unity.Pipeline.Editor.Commands.Baking.LightingBakeCommands",
+    "signature": "object CancelBake()",
+    "file": "Editor\\Commands\\Baking\\LightingBakeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "lighting clear_bake",
+    "class": "Unity.Pipeline.Editor.Commands.Baking.LightingBakeCommands",
+    "signature": "object ClearBake(bool confirm = false, bool includeDiskCache = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\Baking\\LightingBakeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "lighting get_settings",
+    "class": "Unity.Pipeline.Editor.Commands.Baking.LightingBakeCommands",
+    "signature": "LightingSettingsResult GetSettings()",
+    "file": "Editor\\Commands\\Baking\\LightingBakeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "lighting set_settings",
+    "class": "Unity.Pipeline.Editor.Commands.Baking.LightingBakeCommands",
+    "signature": "object SetSettings(JObject settings, bool dryRun = false)",
+    "file": "Editor\\Commands\\Baking\\LightingBakeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "material get_shader_properties",
+    "class": "Unity.Pipeline.Editor.Commands.Materials.ShaderCommands",
+    "signature": "ShaderPropertiesResult GetShaderProperties(string shader = null, ObjectRef material = null)",
+    "file": "Editor\\Commands\\Materials\\ShaderCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "multiplayer.role get_active",
+    "class": "Unity.Pipeline.Editor.Commands.MultiplayerRoleCommands",
+    "signature": "object GetActive()",
+    "file": "Editor\\Commands\\MultiplayerRoleCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.GetActive()"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.GetActive()"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.GetActive()"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "multiplayer.role get_build",
+    "class": "Unity.Pipeline.Editor.Commands.MultiplayerRoleCommands",
+    "signature": "object GetBuild(string profile = null)",
+    "file": "Editor\\Commands\\MultiplayerRoleCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.GetBuild(profile)"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.GetBuild(profile)"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.GetBuild(profile)"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "multiplayer.role get_component",
+    "class": "Unity.Pipeline.Editor.Commands.MultiplayerRoleCommands",
+    "signature": "object GetComponent(ObjectRef target, string type = null)",
+    "file": "Editor\\Commands\\MultiplayerRoleCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.GetComponent(target, type)"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.GetComponent(target, type)"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.GetComponent(target, type)"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "multiplayer.role get_game_object",
+    "class": "Unity.Pipeline.Editor.Commands.MultiplayerRoleCommands",
+    "signature": "object GetGameObject(ObjectRef target)",
+    "file": "Editor\\Commands\\MultiplayerRoleCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.GetGameObject(target)"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.GetGameObject(target)"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.GetGameObject(target)"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "multiplayer.role list_component_types",
+    "class": "Unity.Pipeline.Editor.Commands.MultiplayerRoleCommands",
+    "signature": "object ListComponentTypes()",
+    "file": "Editor\\Commands\\MultiplayerRoleCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.ListComponentTypes()"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.ListComponentTypes()"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.ListComponentTypes()"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "multiplayer.role set_active",
+    "class": "Unity.Pipeline.Editor.Commands.MultiplayerRoleCommands",
+    "signature": "object SetActive(string role)",
+    "file": "Editor\\Commands\\MultiplayerRoleCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.SetActive(role)"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.SetActive(role)"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.SetActive(role)"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "multiplayer.role set_build",
+    "class": "Unity.Pipeline.Editor.Commands.MultiplayerRoleCommands",
+    "signature": "object SetBuild(string role, string profile = null)",
+    "file": "Editor\\Commands\\MultiplayerRoleCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.SetBuild(role, profile)"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.SetBuild(role, profile)"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.SetBuild(role, profile)"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "multiplayer.role set_component",
+    "class": "Unity.Pipeline.Editor.Commands.MultiplayerRoleCommands",
+    "signature": "object SetComponent(ObjectRef target, string role, string type = null)",
+    "file": "Editor\\Commands\\MultiplayerRoleCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.SetComponent(target, role, type)"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.SetComponent(target, role, type)"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.SetComponent(target, role, type)"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "multiplayer.role set_component_type",
+    "class": "Unity.Pipeline.Editor.Commands.MultiplayerRoleCommands",
+    "signature": "object SetComponentType(string type, string role)",
+    "file": "Editor\\Commands\\MultiplayerRoleCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.SetComponentType(type, role)"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.SetComponentType(type, role)"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.SetComponentType(type, role)"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "multiplayer.role set_game_object",
+    "class": "Unity.Pipeline.Editor.Commands.MultiplayerRoleCommands",
+    "signature": "object SetGameObject(ObjectRef target, string role)",
+    "file": "Editor\\Commands\\MultiplayerRoleCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.SetGameObject(target, role)"
+      },
+      "2019": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2019Adapter.SetGameObject(target, role)"
+      },
+      "2022": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2022Adapter.SetGameObject(target, role)"
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 3
+    }
+  },
+  {
+    "command": "navmesh bake",
+    "class": "Unity.Pipeline.Editor.Commands.Baking.doc",
+    "signature": "object Bake(bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\Baking\\NavMeshBakeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "navmesh bake_status",
+    "class": "Unity.Pipeline.Editor.Commands.Baking.doc",
+    "signature": "JToken BakeStatus()",
+    "file": "Editor\\Commands\\Baking\\NavMeshBakeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "navmesh bake_surfaces",
+    "class": "Unity.Pipeline.Editor.Commands.Baking.doc",
+    "signature": "object BakeSurfaces()",
+    "file": "Editor\\Commands\\Baking\\NavMeshBakeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.BakeSurfaces()"
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 1
+    }
+  },
+  {
+    "command": "navmesh cancel_bake",
+    "class": "Unity.Pipeline.Editor.Commands.Baking.doc",
+    "signature": "object CancelBake()",
+    "file": "Editor\\Commands\\Baking\\NavMeshBakeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "navmesh clear_bake",
+    "class": "Unity.Pipeline.Editor.Commands.Baking.doc",
+    "signature": "object ClearBake(bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\Baking\\NavMeshBakeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "navmesh get_settings",
+    "class": "Unity.Pipeline.Editor.Commands.Baking.doc",
+    "signature": "NavMeshSettingsResult GetSettings()",
+    "file": "Editor\\Commands\\Baking\\NavMeshBakeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "navmesh set_settings",
+    "class": "Unity.Pipeline.Editor.Commands.Baking.doc",
+    "signature": "object SetSettings(JObject settings, bool dryRun = false)",
+    "file": "Editor\\Commands\\Baking\\NavMeshBakeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "occlusion bake",
+    "class": "Unity.Pipeline.Editor.Commands.Baking.OcclusionBakeCommands",
+    "signature": "object Bake(float smallestOccluder = Unset, float smallestHole = Unset, float backfaceThreshold = Unset, bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\Baking\\OcclusionBakeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "occlusion bake_status",
+    "class": "Unity.Pipeline.Editor.Commands.Baking.OcclusionBakeCommands",
+    "signature": "JToken BakeStatus()",
+    "file": "Editor\\Commands\\Baking\\OcclusionBakeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "occlusion cancel_bake",
+    "class": "Unity.Pipeline.Editor.Commands.Baking.OcclusionBakeCommands",
+    "signature": "object CancelBake()",
+    "file": "Editor\\Commands\\Baking\\OcclusionBakeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "occlusion clear_bake",
+    "class": "Unity.Pipeline.Editor.Commands.Baking.OcclusionBakeCommands",
+    "signature": "object ClearBake(bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\Baking\\OcclusionBakeCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "package add",
+    "class": "Unity.Pipeline.Editor.Commands.PackageManager.PackageManagerCommand",
+    "signature": "object Add(string identifier = \"\", bool confirm = false, bool dryRun = false, bool wait = false, double timeoutInSeconds = 300)",
+    "file": "Editor\\Commands\\PackageManager\\PackageManagerCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "package list",
+    "class": "Unity.Pipeline.Editor.Commands.PackageManager.PackageManagerCommand",
+    "signature": "object List(string scope = \"installed\",)",
+    "file": "Editor\\Commands\\PackageManager\\PackageManagerCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "package remove",
+    "class": "Unity.Pipeline.Editor.Commands.PackageManager.PackageManagerCommand",
+    "signature": "object Remove(string name = \"\", bool confirm = false, bool dryRun = false, bool wait = false, double timeoutInSeconds = 300)",
+    "file": "Editor\\Commands\\PackageManager\\PackageManagerCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "package resolve",
+    "class": "Unity.Pipeline.Editor.Commands.PackageManager.PackageManagerCommand",
+    "signature": "object Resolve()",
+    "file": "Editor\\Commands\\PackageManager\\PackageManagerCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "package search",
+    "class": "Unity.Pipeline.Editor.Commands.PackageManager.PackageManagerCommand",
+    "signature": "object Search(string query = \"\", bool offline = false, double timeoutInSeconds = 60)",
+    "file": "Editor\\Commands\\PackageManager\\PackageManagerCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "package status",
+    "class": "Unity.Pipeline.Editor.Commands.PackageManager.PackageManagerCommand",
+    "signature": "JToken Status()",
+    "file": "Editor\\Commands\\PackageManager\\PackageManagerCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "pipeline list_commands",
+    "class": "Unity.Pipeline.Runtime.Commands.PipelineCommands",
+    "signature": "object ListCommands(string detail = null, string query = null, string group = null, string tag = null, bool includeTests = false, string groupBy = null, string sort = null, string order = null, int? offset = null, int? limit = null)",
+    "file": "Runtime\\Commands\\PipelineCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "pipeline progress",
+    "class": "Unity.Pipeline.Runtime.Commands.PipelineCommands",
+    "signature": "object Progress()",
+    "file": "Runtime\\Commands\\PipelineCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "prefab apply_overrides",
+    "class": "Unity.Pipeline.Editor.Commands.Prefabs.PrefabCommands",
+    "signature": "AuthoringResult ApplyOverrides(ObjectRef instance)",
+    "file": "Editor\\Commands\\Prefabs\\PrefabCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.ApplyOverrides(instance)"
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 1
+    }
+  },
+  {
+    "command": "prefab create",
+    "class": "Unity.Pipeline.Editor.Commands.Prefabs.PrefabCommands",
+    "signature": "AuthoringResult Create(ObjectRef source, string path)",
+    "file": "Editor\\Commands\\Prefabs\\PrefabCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "prefab create_variant",
+    "class": "Unity.Pipeline.Editor.Commands.Prefabs.PrefabCommands",
+    "signature": "AuthoringResult CreateVariant(ObjectRef basePrefab, string path)",
+    "file": "Editor\\Commands\\Prefabs\\PrefabCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.CreateVariant(basePrefab, path)"
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 1
+    }
+  },
+  {
+    "command": "prefab instantiate",
+    "class": "Unity.Pipeline.Editor.Commands.Prefabs.PrefabCommands",
+    "signature": "AuthoringResult Instantiate(ObjectRef prefab, string scenePath = null, string name = null)",
+    "file": "Editor\\Commands\\Prefabs\\PrefabCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "prefab revert_overrides",
+    "class": "Unity.Pipeline.Editor.Commands.Prefabs.PrefabCommands",
+    "signature": "AuthoringResult RevertOverrides(ObjectRef instance)",
+    "file": "Editor\\Commands\\Prefabs\\PrefabCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "prefab save_contents",
+    "class": "Unity.Pipeline.Editor.Commands.Prefabs.PrefabCommands",
+    "signature": "AuthoringResult SaveContents(ObjectRef prefab, string renameChild = null, string newName = null, string setActiveChild = null, bool active = true)",
+    "file": "Editor\\Commands\\Prefabs\\PrefabCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": false,
+        "implementation": "Unity.Pipeline.Adapters.Unity2018Adapter.SaveContents(prefab, renameChild, newName, setActiveChild, active)"
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 1
+    }
+  },
+  {
+    "command": "prefab unpack",
+    "class": "Unity.Pipeline.Editor.Commands.Prefabs.PrefabCommands",
+    "signature": "AuthoringResult Unpack(ObjectRef instance, bool completely = false)",
+    "file": "Editor\\Commands\\Prefabs\\PrefabCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "runtime quit",
+    "class": "Unity.Pipeline.Runtime.Commands.RuntimeApplicationCommand",
+    "signature": "string Quit(int exitCode = 0)",
+    "file": "Runtime\\Commands\\RuntimeApplicationCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "runtime set_target_frame_rate",
+    "class": "Unity.Pipeline.Runtime.Commands.RuntimeApplicationCommand",
+    "signature": "string SetTargetFrameRate(int frameRate)",
+    "file": "Runtime\\Commands\\RuntimeApplicationCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "runtime set_time_scale",
+    "class": "Unity.Pipeline.Runtime.Commands.RuntimeApplicationCommand",
+    "signature": "string SetTimeScale(float scale)",
+    "file": "Runtime\\Commands\\RuntimeApplicationCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "runtime simulate_key",
+    "class": "Unity.Pipeline.Runtime.Commands.RuntimeInputCommand",
+    "signature": "InputSimulationResponse SimulateKey(string key, string action = \"press\")",
+    "file": "Runtime\\Commands\\RuntimeInputCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "runtime simulate_pointer",
+    "class": "Unity.Pipeline.Runtime.Commands.RuntimeInputCommand",
+    "signature": "InputSimulationResponse SimulatePointer(float x, float y, string action = \"click\", string button = \"left\")",
+    "file": "Runtime\\Commands\\RuntimeInputCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "runtime status",
+    "class": "Unity.Pipeline.Runtime.Commands.RuntimeStatusCommand",
+    "signature": "RuntimeStatusResponse Status()",
+    "file": "Runtime\\Commands\\RuntimeStatusCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "scene add_to_build",
+    "class": "Unity.Pipeline.Editor.Commands.Scenes.SceneCommands",
+    "signature": "object AddToBuild(string path, bool enabled = true)",
+    "file": "Editor\\Commands\\Scenes\\SceneCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "scene create",
+    "class": "Unity.Pipeline.Editor.Commands.Scenes.SceneCommands",
+    "signature": "AuthoringResult Create(string path, bool additive = false, string template = TemplateEmpty)",
+    "file": "Editor\\Commands\\Scenes\\SceneCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "scene get_hierarchy",
+    "class": "Unity.Pipeline.Editor.Commands.Scenes.SceneCommands",
+    "signature": "SceneHierarchy GetHierarchy(string path = null)",
+    "file": "Editor\\Commands\\Scenes\\SceneCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "scene list_open",
+    "class": "Unity.Pipeline.Editor.Commands.Scenes.SceneCommands",
+    "signature": "object ListOpen()",
+    "file": "Editor\\Commands\\Scenes\\SceneCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "scene open",
+    "class": "Unity.Pipeline.Editor.Commands.Scenes.SceneCommands",
+    "signature": "AuthoringResult Open(string path, bool additive = false)",
+    "file": "Editor\\Commands\\Scenes\\SceneCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "scene remove_from_build",
+    "class": "Unity.Pipeline.Editor.Commands.Scenes.SceneCommands",
+    "signature": "object RemoveFromBuild(string path)",
+    "file": "Editor\\Commands\\Scenes\\SceneCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "scene save",
+    "class": "Unity.Pipeline.Editor.Commands.Scenes.SceneCommands",
+    "signature": "AuthoringResult Save(string path = null)",
+    "file": "Editor\\Commands\\Scenes\\SceneCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "scene save_all",
+    "class": "Unity.Pipeline.Editor.Commands.Scenes.SceneCommands",
+    "signature": "object SaveAll()",
+    "file": "Editor\\Commands\\Scenes\\SceneCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "scene set_active",
+    "class": "Unity.Pipeline.Editor.Commands.Scenes.SceneCommands",
+    "signature": "AuthoringResult SetActive(string path)",
+    "file": "Editor\\Commands\\Scenes\\SceneCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "script attach",
+    "class": "Unity.Pipeline.Editor.Commands.Scripts.through",
+    "signature": "AuthoringResult Attach(ObjectRef target, string type = null, string script = null)",
+    "file": "Editor\\Commands\\Scripts\\AttachScriptCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "script create",
+    "class": "Unity.Pipeline.Editor.Commands.Scripts.CreateScriptCommand",
+    "signature": "AuthoringResult Create(string name, string path = null, string @namespace = null, string baseClass = \"MonoBehaviour\", bool overwrite = false)",
+    "file": "Editor\\Commands\\Scripts\\CreateScriptCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "script eval",
+    "class": "Unity.Pipeline.Runtime.Commands.CodeEvalCommand",
+    "signature": "async Task<EvalResponse> Eval(string code = null, string file = null, double timeoutInSeconds = 30, bool dryRun = false, bool autoImport = false, bool internals = false)",
+    "file": "Runtime\\Commands\\CodeEvalCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "script eval_file",
+    "class": "Unity.Pipeline.Runtime.Commands.CodeEvalCommand",
+    "signature": "async Task<EvalResponse> EvalFile(string file, double timeoutInSeconds = 30, bool dryRun = false, bool autoImport = false, bool internals = false)",
+    "file": "Runtime\\Commands\\CodeEvalCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "script recompile",
+    "class": "Unity.Pipeline.Editor.Commands.RecompileCommand",
+    "signature": "object Recompile(bool focus = false)",
+    "file": "Editor\\Commands\\RecompileCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "script recompile_status",
+    "class": "Unity.Pipeline.Editor.Commands.RecompileCommand",
+    "signature": "RecompileStatusPayload RecompileStatus()",
+    "file": "Editor\\Commands\\RecompileCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "script run",
+    "class": "Unity.Pipeline.Editor.Commands.Scripts.command",
+    "signature": "async Task<RunScriptResponse> Run(string file, string entry = null, , and a string/object handle (ObjectRef) for UnityEngine.Object parameters. Ephemeral mode only (rejected with mode=hotpatch).\")] JArray args = null, method replacements to already-loaded types (\" + CommandNames.ScriptMethodreloadReload + \" semantics).\")] string mode = \"ephemeral\", string[] references = null, string[] defines = null, bool pdb = false, double timeoutInSeconds = 60, bool dryRun = false)",
+    "file": "Editor\\Commands\\Scripts\\RunScriptCommand.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "script.methodreload cleanup",
+    "class": "Unity.Pipeline.Runtime.Commands.MethodReloadCommands",
+    "signature": "MethodReloadResponse Cleanup(string assemblyDir, bool forceDomainReload = true)",
+    "file": "Runtime\\Commands\\MethodReloadCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "script.methodreload reload",
+    "class": "Unity.Pipeline.Runtime.Commands.MethodReloadCommands",
+    "signature": "MethodReloadResponse Reload( methods (e.g. Assets/Scripts/Player.cs)\", Required = true)] string filename, double timeoutInSeconds = 60, string assemblyDir = null, bool pdb = false)",
+    "file": "Runtime\\Commands\\MethodReloadCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "script.methodreload reload_editor",
+    "class": "Unity.Pipeline.Runtime.Commands.MethodReloadCommands",
+    "signature": "MethodReloadResponse ReloadEditor( methods (e.g. Assets/Scripts/Player.cs)\", Required = true)] string filename, double timeoutInSeconds = 60, string assemblyDir = null, bool pdb = false)",
+    "file": "Runtime\\Commands\\MethodReloadCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "script.methodreload status",
+    "class": "Unity.Pipeline.Runtime.Commands.MethodReloadCommands",
+    "signature": "MethodReloadResponse Status()",
+    "file": "Runtime\\Commands\\MethodReloadCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "settings. get",
+    "class": "Unity.Pipeline.Editor.Commands.ProjectSettings.AudioSettingsCommands",
+    "signature": "ProjectSettingsResponse Get() => ProjectSettingsCommand.Get(Domain, Read)",
+    "file": "Editor\\Commands\\ProjectSettings\\AudioSettingsCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "settings. set",
+    "class": "Unity.Pipeline.Editor.Commands.ProjectSettings.AudioSettingsCommands",
+    "signature": "ProjectSettingsResponse Set(AudioSettingsInput settings = null, bool confirm = false, bool dryRun = false)",
+    "file": "Editor\\Commands\\ProjectSettings\\AudioSettingsCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "test cancel",
+    "class": "Unity.Pipeline.Editor.Commands.TestCommands",
+    "signature": "object Cancel()",
+    "file": "Editor\\Commands\\TestCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "test list",
+    "class": "Unity.Pipeline.Editor.Commands.TestCommands",
+    "signature": "async Task<TestListResponse> List(string mode = \"all\")",
+    "file": "Editor\\Commands\\TestCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "test run",
+    "class": "Unity.Pipeline.Editor.Commands.TestCommands",
+    "signature": "async Task<TestExecutionResponse> Run(string mode = \"all\", string filter = \"\", string filterType = \"testName\", attribute\")] bool includeExplicit = false, bool asyncTests = false, double timeoutInSeconds = 600)",
+    "file": "Editor\\Commands\\TestCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  },
+  {
+    "command": "test status",
+    "class": "Unity.Pipeline.Editor.Commands.TestCommands",
+    "signature": "JToken Status()",
+    "file": "Editor\\Commands\\TestCommands.cs",
+    "compatibility": {
+      "2018": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2019": {
+        "compatible": true,
+        "implementation": null
+      },
+      "2022": {
+        "compatible": true,
+        "implementation": null
+      },
+      "6000": {
+        "compatible": true,
+        "implementation": null
+      },
+      "incompat_count": 0
+    }
+  }
+]

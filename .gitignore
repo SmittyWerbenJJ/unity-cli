@@ -1,0 +1,5 @@
+src~/**/bin/
+src~/**/obj/
+.serena/
+*.bak
+__pycache__/

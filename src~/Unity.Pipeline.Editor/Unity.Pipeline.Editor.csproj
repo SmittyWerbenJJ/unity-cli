@@ -1,0 +1,68 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>Unity.Pipeline.Editor</AssemblyName>
+    <RootNamespace>Unity.Pipeline.Editor</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineConstants>$(DefineConstants);UNITY_EDITOR;UNITY_2018_1_OR_NEWER</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="src\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="UnityEditor">
+      <HintPath>D:\packages\extern\unity\2018.1.0f2\Editor\Data\Managed\UnityEditor.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="D:\packages\extern\unity\2018.1.0f2\Editor\Data\Managed\UnityEngine\*.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="D:\packages\extern\unity\2018.1.0f2\Editor\Data\UnityExtensions\Unity\TestRunner\Editor\UnityEditor.TestRunner.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="D:\packages\extern\unity\2018.1.0f2\Editor\Data\UnityExtensions\Unity\TestRunner\UnityEngine.TestRunner.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.Pipeline">
+      <HintPath>..\..\Runtime\Plugins\Unity.Pipeline.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.Pipeline.Core">
+      <HintPath>..\..\Runtime\Plugins\Unity.Pipeline.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.Pipeline.Attributes">
+      <HintPath>..\..\Runtime\Plugins\Unity.Pipeline.Attributes.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>..\..\Runtime\Plugins\System.Memory.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>..\..\Runtime\Plugins\System.Buffers.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityPipeline.Microsoft.CodeAnalysis">
+      <HintPath>..\..\Runtime\Plugins\CodeAnalysis\UnityPipeline.Microsoft.CodeAnalysis.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityPipeline.Microsoft.CodeAnalysis.CSharp">
+      <HintPath>..\..\Runtime\Plugins\CodeAnalysis\UnityPipeline.Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

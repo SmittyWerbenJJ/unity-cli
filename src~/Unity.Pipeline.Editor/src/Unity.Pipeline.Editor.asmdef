@@ -1,0 +1,22 @@
+{
+    "name": "Unity.Pipeline.Editor",
+    "rootNamespace": "Unity.Pipeline.Editor",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.multiplayer.playmode",
+            "expression": "",
+            "define": "MPPM_AVAILABLE"
+        }
+    ],
+    "noEngineReferences": false
+}
