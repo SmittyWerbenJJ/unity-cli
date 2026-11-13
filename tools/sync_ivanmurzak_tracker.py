@@ -644,13 +644,13 @@ def main():
     import tempfile
     default_temp_dir = os.path.join(tempfile.gettempdir(), "unity-mcp-sync")
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    repo_root = os.path.dirname(script_dir) if os.path.basename(script_dir).lower() == "scripts" else script_dir
+    repo_root = os.path.dirname(script_dir) if os.path.basename(script_dir).lower() in ("scripts", "tools") else script_dir
     parser = argparse.ArgumentParser(description="Synchronize IvanMurzak feature supersession tracker via temp release cache.")
     parser.add_argument("--temp-dir", default=default_temp_dir,
                         help="Temporary directory for downloading and unpacking mcpforunityserver release archives")
     parser.add_argument("--schemas-dir", default=None,
                         help="Optional local schema folder override")
-    parser.add_argument("--output", default=os.path.join(repo_root, "IVANMURZAK_FEATURE_TRACKER.md"),
+    parser.add_argument("--output", default=os.path.join(repo_root, "docs", "IVANMURZAK_FEATURE_TRACKER.md"),
                         help="Path to output markdown file")
     parser.add_argument("--fetch-pypi", action="store_true", default=True,
                         help="Check PyPI and download latest mcpforunityserver wheel into temp-dir")
