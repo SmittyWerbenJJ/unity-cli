@@ -1,11 +1,11 @@
 ---
 name: unity-cli
-description: End-to-end Unity CLI and live Editor automation for Unity 2018 through Unity 6: auto-installs the in-Editor bridge (com.sinematic3d.pipeline) and drives scenes, GameObjects, assets, Play Mode, C# eval, builds, tests, installs, licenses, and VCS from the terminal; use whenever inspecting, automating, building, testing, or setting up any Unity project.
+description: End-to-end Unity CLI and live Editor automation for Unity 2018 through Unity 6: drives scenes, GameObjects, assets, Play Mode, C# eval, builds, tests, installs, licenses, and VCS from the terminal; use whenever inspecting, automating, building, testing, or setting up any Unity project.
 ---
 
-# Unity CLI & Pipeline (`com.sinematic3d.pipeline`)
+# Unity CLI
 
-Use the `unity` CLI (paired with `com.sinematic3d.pipeline`, supporting **Unity 2018 to Unity 6**) to inspect and drive Unity projects and live Editors.
+Use the `unity` CLI (paired with the bundled pipeline package, supporting **Unity 2018 to Unity 6**) to inspect and drive Unity projects and live Editors.
 
 ---
 
@@ -16,8 +16,8 @@ Check if `unity` is on `PATH` (`which unity && unity --version` or `Get-Command 
 - **Windows (PowerShell):** `irm https://unity.com/install.ps1 | iex`
 - **macOS / Linux:** `curl -fsSL https://unity.com/install.sh | bash`
 
-### B. Auto-Install `com.sinematic3d.pipeline` into the Target Project
-Never ask the user to manually open Package Manager or run an installer script. When a target Unity project does not yet have `com.sinematic3d.pipeline`:
+### B. Auto-Install the Pipeline Package into the Target Project
+Never ask the user to manually open Package Manager or run an installer script. When a target Unity project does not yet have the pipeline package:
 1. **Check project version** (`<ProjectPath>/ProjectSettings/ProjectVersion.txt`) and `Packages/manifest.json`.
 2. **Unity 2019.4 LTS – 6000.0+:** Add `"com.sinematic3d.pipeline": "https://github.com/SmittyWerbenJJ/unity-cli.git?path=/com.sinematic3d.pipeline"` to `<ProjectPath>/Packages/manifest.json` (and remove any legacy `com.unity.pipeline` entry).
 3. **Unity 2018.1 (or offline/local):** Copy `<skill-dir>/com.sinematic3d.pipeline/` directly into `<ProjectPath>/Packages/com.sinematic3d.pipeline/`.
