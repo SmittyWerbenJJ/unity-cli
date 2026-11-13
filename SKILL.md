@@ -1,11 +1,11 @@
 ---
 name: unity-cli
-description: Controls Unity Editors (2018.1–6000+), auto-installs com.sinematic3d.pipeline, and runs builds, tests, or live C# via unity CLI; use for any Unity project setup or Editor task.
+description: End-to-end Unity CLI and live Editor automation for Unity 2018 through Unity 6: auto-installs the in-Editor bridge (com.sinematic3d.pipeline) and drives scenes, GameObjects, assets, Play Mode, C# eval, builds, tests, installs, licenses, and VCS from the terminal; use whenever inspecting, automating, building, testing, or setting up any Unity project.
 ---
 
 # Unity CLI & Pipeline (`com.sinematic3d.pipeline`)
 
-Use the `unity` CLI (paired with `com.sinematic3d.pipeline`, supporting **Unity 2018.1, 2019.4 LTS, 2022.3 LTS, and 6000.0+**) to inspect and drive Unity projects and live Editors.
+Use the `unity` CLI (paired with `com.sinematic3d.pipeline`, supporting **Unity 2018 to Unity 6**) to inspect and drive Unity projects and live Editors.
 
 ---
 
