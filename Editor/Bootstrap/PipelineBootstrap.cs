@@ -107,7 +107,11 @@ namespace Unity.Pipeline.Bootstrap
                 TryStartPipelineServer();
                 EditorApplication.delayCall += delegate
                 {
+#if UNITY_2018_2_OR_NEWER
                     if (!Application.isBatchMode)
+#else
+                    if (!UnityEditorInternal.InternalEditorUtility.inBatchMode)
+#endif
                     {
                         AssetDatabase.ImportAsset(TargetRelativePath, ImportAssetOptions.ForceUpdate);
                     }

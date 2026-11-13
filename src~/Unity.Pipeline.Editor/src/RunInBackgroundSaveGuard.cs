@@ -14,13 +14,19 @@ namespace Unity.Pipeline.Editor
     /// override on the next Editor update, once the save is done. Same restore-then-reapply as
     /// <see cref="BuildProcessors.PipelineRuntimeBuildProcessor"/> does around a build.
     /// </summary>
-    class RunInBackgroundSaveGuard : AssetModificationProcessor
+    /// <summary>
+    /// Unity-version-agnostic entry point invoked by <c>Editor/Bootstrap/RunInBackgroundSaveGuardShim.cs</c>.
+    /// Keeping <c>AssetModificationProcessor</c> inheritance out of the precompiled DLL avoids
+    /// TypeLoadException between Unity 2018.1 (global namespace) and Unity 2019+ (<c>UnityEditor</c> namespace).
+    /// </summary>
+    public static class RunInBackgroundSaveGuard
     {
         internal const string ProjectSettingsAssetPath = "ProjectSettings/ProjectSettings.asset";
 
-        internal static string[] OnWillSaveAssets(string[] paths)
+        public static string[] OnWillSaveAssets(string[] paths)
         {
-            if (Array.Exists(paths, p => string.Equals(p, ProjectSettingsAssetPath, StringComparison.OrdinalIgnoreCase))
+            if (paths != null
+                && Array.Exists(paths, p => string.Equals(p, ProjectSettingsAssetPath, StringComparison.OrdinalIgnoreCase))
                 && PipelineServerStartup.RestoreProjectRunInBackground())
             {
                 EditorApplication.delayCall += ReapplyAfterSave;

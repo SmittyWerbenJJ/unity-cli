@@ -57,10 +57,13 @@ When Unity loads a project with `com.unity.pipeline`, an in-process local HTTP/W
 #### Relationship with `IvanMurzak/Unity-MCP` & The 177 Native Engine Commands
 `unity-cli` and `unity mcp` build upon and consolidate the open bridge architecture established by the community-standard **`IvanMurzak/Unity-MCP`** (mcpforunity). The pipeline package exposes **177 native engine commands** out of the box (covering GameObject hierarchies, scene management, components, assets, prefabs, materials, physics, UI/Canvas, reflection, console logging, testing, and builds), and is fully extensible via C# `[CliCommand]` and `[CliArg]` attributes.
 
-#### Headless Batchmode Daemons Across All Versions
-To run a persistent headless Editor daemon on any supported Unity version (CI runners, containers, or local terminal background):
+#### GUI Editor Daemon vs. Headless Batchmode Daemons
+When interacting with a Unity project, **`com.unity.pipeline`** acts as the single in-project daemon/MCP bridge (port 7800, `.unity-pipeline-port`) between the agent / `unity-cli` / `unity mcp` and the running Editor:
 
-**Windows (CMD / PowerShell):**
+- **GUI Editor Daemon (Recommended — Hub-Signed-In):** Launch without `-batchmode` (`unity open <project>` or `Unity.exe -projectPath <path> -automated -logFile <path>\editor.log`). Unity Hub attaches the user's session in ~2s, enabling both live scene/code commands **and** account-bound Asset Store commands (`unity command assetstore_status`, `assetstore_list`, `assetstore_detail`, `assetstore_fetch`).
+- **Headless Batchmode Daemon (CI / No Hub Session):** Launch with `-batchmode` and **omit `-quit`** so the Editor stays resident for scene/code/test commands without GUI overhead. Note that `-batchmode` editors do **not** receive a Unity Hub user session (`UnityConnect.loggedIn=false`), so Asset Store commands require a GUI Editor.
+
+**Windows (CMD / PowerShell — Headless Batchmode):**
 ```cmd
 cmd /c Unity.exe -batchmode -projectPath <path> -logFile <path>\editor.log
 ```
@@ -69,15 +72,16 @@ cmd /c Unity.exe -batchmode -projectPath <path> -logFile <path>\editor.log
 Start-Process "Unity.exe" -ArgumentList "-batchmode", "-projectPath", "`"$projectPath`"", "-logFile", "`"$projectPath\editor.log`""
 ```
 
-**macOS / Linux:**
+**macOS / Linux (Headless Batchmode):**
 ```bash
 "$UNITY_PATH" -batchmode -projectPath /path/to/MyProject -logFile editor.log &
 ```
 
-> **CRITICAL — OMIT `-quit`:** Standard batch jobs pass `-quit` to exit immediately. **Omitting `-quit`** keeps the Editor resident as a live background daemon. It loads the engine, initializes `com.unity.pipeline`, starts the listener on port 7800, writes `.unity-pipeline-port`, and stays resident ready to process live CLI and MCP requests without any GUI overhead.
+> **CRITICAL — OMIT `-quit`:** Standard batch jobs pass `-quit` to exit immediately. **Omitting `-quit`** keeps the Editor resident as a live background daemon. It loads the engine, initializes `com.unity.pipeline`, starts the listener on port 7800, writes `.unity-pipeline-port`, and stays resident ready to process live CLI and MCP requests.
 >
-> The CLI and `unity mcp` automatically discover this headless daemon via `.unity-pipeline-port`. Confirm reachability with:
+> The CLI and `unity mcp` automatically discover this daemon via `.unity-pipeline-port`. Confirm reachability with:
 > ```bash
+> unity status --project-path /path/to/MyProject
 > unity command --project-path /path/to/MyProject
 > unity list --project-path /path/to/MyProject
 > ```
