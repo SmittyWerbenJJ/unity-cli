@@ -1,6 +1,6 @@
 ---
 name: unity-cli
-description: Controls the Unity Editor and projects from the command line, auto-installs com.sinematic3d.pipeline (Unity 2018.1–6000+), and drives a running Editor to edit scenes, assets, or run C#. Use when setting up a Unity project, installing or managing Editors/licenses/VCS, building, testing, configuring Unity MCP, or running any unity command.
+description: Controls Unity Editors (2018.1–6000+), auto-installs com.sinematic3d.pipeline, and runs builds, tests, or live C# via unity CLI; use for any Unity project setup or Editor task.
 ---
 
 # Unity CLI & Pipeline (`com.sinematic3d.pipeline`)
