@@ -1,9 +1,12 @@
 {
-  "name": "com.unity.pipeline",
-  "displayName": "Unity Pipeline (Multi-LTS 2018-6000+)",
+  "name": "com.sinematic3d.pipeline",
+  "displayName": "Sinematic3D Unity Pipeline (Multi-LTS 2018-6000+)",
   "version": "0.10.0-lts.2",
   "unity": "2018.1",
   "category": "Pipeline",
+  "author": {
+    "name": "Sinematic3D"
+  },
   "description": "Unified Unity Pipeline & CLI/MCP server package supporting Unity 2018.1, 2019.4 LTS, 2022.3 LTS, and Unity 6000.0+. Includes zero-touch Newtonsoft.Json bootstrapper for Unity 2018 and IvanMurzak/Unity-MCP compatibility commands.",
   "keywords": [
     "pipeline",
@@ -24,8 +27,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/SmittyWerbenJJ/unity-cli.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@SmittyWerbenJJ"
   }
 }

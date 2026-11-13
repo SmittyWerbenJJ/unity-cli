@@ -1,5 +1,5 @@
-src~/**/bin/
-src~/**/obj/
+com.sinematic3d.pipeline/src~/**/bin/
+com.sinematic3d.pipeline/src~/**/obj/
 .serena/
 *.bak
 __pycache__/

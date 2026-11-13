@@ -375,7 +375,7 @@ namespace Unity.Pipeline.Editor.BuildProcessors
             if (!TryGetBundledCodeAnalysisPaths(out var codeAnalysisDir, out var checksumsPath))
             {
                 throw new BuildFailedException(
-                    "Pipeline: could not locate the com.unity.pipeline package on disk to verify " +
+                    "Pipeline: could not locate the pipeline package on disk to verify " +
                     "bundled Roslyn DLL integrity. Aborting build.");
             }
 
@@ -399,23 +399,11 @@ namespace Unity.Pipeline.Editor.BuildProcessors
             codeAnalysisDir = null;
             checksumsPath = null;
 
-#if UNITY_2019_2_OR_NEWER
-            var packageInfo = UnityEditor.PackageManager.PackageInfo.FindForAssembly(
-                typeof(PipelineRuntimeBuildProcessor).Assembly);
-
-            if (packageInfo == null || string.IsNullOrEmpty(packageInfo.resolvedPath))
-                return false;
-
-            codeAnalysisDir = Path.Combine(packageInfo.resolvedPath, CodeAnalysisRelDir);
-#else
-            var resolvedPath = Path.GetFullPath("Assets/com.unity.pipeline");
-            if (!Directory.Exists(resolvedPath))
-                resolvedPath = Path.GetFullPath("Packages/com.unity.pipeline");
-            if (!Directory.Exists(resolvedPath))
+            var resolvedPath = PackagePathResolver.ResolvePackageRoot(typeof(PipelineRuntimeBuildProcessor).Assembly);
+            if (string.IsNullOrEmpty(resolvedPath))
                 return false;
 
             codeAnalysisDir = Path.Combine(resolvedPath, CodeAnalysisRelDir);
-#endif
             checksumsPath = Path.Combine(codeAnalysisDir, ChecksumsFileName);
             return true;
         }

@@ -21,19 +21,13 @@ namespace Unity.Pipeline.Editor
         /// <returns>Old name to full name, or null when the file cannot be read.</returns>
         internal static IReadOnlyDictionary<string, string> Load()
         {
-#if UNITY_2019_2_OR_NEWER
-            var package = UnityEditor.PackageManager.PackageInfo.FindForAssembly(typeof(ObsoleteCommandNamesFile).Assembly);
-            if (package == null || string.IsNullOrEmpty(package.resolvedPath))
+            var resolvedPath = PackagePathResolver.ResolvePackageRoot(typeof(ObsoleteCommandNamesFile).Assembly);
+            if (string.IsNullOrEmpty(resolvedPath))
                 return null;
 
-            var path = Path.Combine(package.resolvedPath, "Editor", FileName);
-#else
-            var path = Path.GetFullPath("Assets/com.unity.pipeline/Editor/" + FileName);
-            if (!File.Exists(path))
-                path = Path.GetFullPath("Packages/com.unity.pipeline/Editor/" + FileName);
+            var path = Path.Combine(resolvedPath, "Editor", FileName);
             if (!File.Exists(path))
                 return null;
-#endif
             try
             {
                 return JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(path));

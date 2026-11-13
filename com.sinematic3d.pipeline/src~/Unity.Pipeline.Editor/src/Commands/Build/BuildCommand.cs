@@ -386,12 +386,16 @@ namespace Unity.Pipeline.Editor.Commands.Build
             var files = new List<BuildFileEntry>();
             try
             {
-#if UNITY_2020_1_OR_NEWER
-                foreach (var f in report.GetFiles())
-#else
-                foreach (var f in report.files)
-#endif
-                    files.Add(new BuildFileEntry { Path = f.path, Role = f.role, SizeBytes = (long)f.size });
+                var reportType = report.GetType();
+                var getFilesMethod = reportType.GetMethod("GetFiles", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance, null, Type.EmptyTypes, null);
+                var buildFiles = getFilesMethod != null
+                    ? getFilesMethod.Invoke(report, null) as BuildFile[]
+                    : reportType.GetProperty("files", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance)?.GetValue(report) as BuildFile[];
+                if (buildFiles != null)
+                {
+                    foreach (var f in buildFiles)
+                        files.Add(new BuildFileEntry { Path = f.path, Role = f.role, SizeBytes = (long)f.size });
+                }
             }
             catch (Exception ex)
             {
